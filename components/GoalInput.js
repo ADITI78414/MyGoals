@@ -2,16 +2,16 @@ import { useState } from "react"
 import { View, TextInput, Button, StyleSheet } from "react-native"
 
 function GoalInput({onAddGoal}){
-    const [enteredGoalText, setEnterGoalText]= useState('')
+    const [enteredGoalText, setEnteredGoalText]= useState('')
 
     function handleInputGoal(enteredText){
-        console.log(enteredText)
-        setEnterGoalText(enteredText)
+        //console.log(enteredText)
+        setEnteredGoalText(enteredText)
     }
 
     function addGoalHandler(){
         onAddGoal(enteredGoalText)
-        setEnterGoalText('')
+        setEnteredGoalText('')
         console.log('addGoalHandler')
     }
 
