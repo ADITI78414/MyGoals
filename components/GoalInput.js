@@ -16,11 +16,11 @@ function GoalInput({onAddGoal}){
     }
 
     return(
-        <View style={style.inputContainer}>
+        <View style={styles.inputContainer}>
             <TextInput
-            style={style.textInput}
+            style={styles.textInput}
             placeholder="Your Goal!"
-            onChange={handleInputGoal}
+            onChangeText={handleInputGoal}
             value={enteredGoalText}
             />
             <Button
@@ -34,17 +34,17 @@ function GoalInput({onAddGoal}){
 
 export default GoalInput
 
-const style = StyleSheet.create({
-    inputContainer:{
+const styles = StyleSheet.create({
+    inputContainer: {
        flex: 1,
        flexDirection: 'dow',
-       justtyfiContent: 'space',
+       justtyfiContent: 'space-between',
        alignItems: 'center',
        marginBottom: 20,
        borderBottomWidht: 1,
        borderBottomColor: '#7BC9FF' 
     },
-    textInput:{
+    textInput: {
         borderWidth: 1,
         borderColor: '#cccccc',
         width: '80%',
